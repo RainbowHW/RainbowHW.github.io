@@ -2,7 +2,7 @@
 layout:post
 title: 锋利的jQuery代码案例
 description:jQueryCode
-tag:jQuery代码练习
+tag: jQuery代码练习
 ---
 
 ##第二章 案例
