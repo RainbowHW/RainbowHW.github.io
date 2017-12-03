@@ -5,11 +5,11 @@ description: jQuery Code
 tag: jQuery代码练习
 ---
 
-##第二章 案例
+## 第二章 案例
 
 函数`filter()` `is()`
 
-###`filter()`
+### `filter()` 
 
 定义和语法：将匹配元素集合缩减为匹配指定选择器的元素。
 
