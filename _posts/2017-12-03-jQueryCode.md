@@ -1,7 +1,7 @@
 ---
-layout:post
+layout: post
 title: 锋利的jQuery代码案例
-description:jQueryCode
+description: jQuery Code
 tag: jQuery代码练习
 ---
 
