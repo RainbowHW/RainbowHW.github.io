@@ -5,7 +5,7 @@ description:jQueryCode
 tag:jQuery代码练习
 ---
 
-## 第二章
+##第二章 案例
 
 函数`filter()` `is()`
 
