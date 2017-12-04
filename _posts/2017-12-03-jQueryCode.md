@@ -64,3 +64,5 @@ $(document).ready(function(){
 > `pageX pageY`是相对于当前页面中除去菜单栏的距离，**在`clientX clientY`的基础上加上滚动条滚动的距离**
 
 ## 第四章 案例
+
+疑问：什么使背景图片居中
