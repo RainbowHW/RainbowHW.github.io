@@ -55,14 +55,28 @@ $(document).ready(function(){
 })
 ```
 
-> jQuery中的`clientY` `pageY` `screenY` **都是获取鼠标位置的属性**
->
-> `screenX screenY` 是距离**电脑屏幕**边缘的距离
->
-> `clientX clientY`是距离当前可视窗口的距离，**除去浏览器顶部菜单栏**
->
-> `pageX pageY`是相对于当前页面中除去菜单栏的距离，**在`clientX clientY`的基础上加上滚动条滚动的距离**
+jQuery中的`clientY` `pageY` `screenY` **都是获取鼠标位置的属性**
+
+`screenX screenY` 是距离**电脑屏幕**边缘的距离
+
+`clientX clientY`是距离当前可视窗口的距离，**除去浏览器顶部菜单栏**
+
+`pageX pageY`是相对于当前页面中除去菜单栏的距离，**在`clientX clientY`的基础上加上滚动条滚动的距离**
 
 ## 第四章 案例
 
 疑问：什么使背景图片居中
+
+`parents()` 取得一个包含所有匹配元素的祖先元素和集合元素
+
+> 几个函数：
+>
+> 1. `parents(可选参数)` 返回祖先元素**多个祖先元素** 距离近的祖先元素先返回 `$("b").parents()`
+>
+>
+> 2. `parent(可选参数)`返回父元素 **父元素只有一个**
+> 3. `find(参数必须要有)`获得元素的后代元素  `$("ul").find("li")`
+> 4. `width()` 获取或设置元素的宽度
+> 5. `animate({css样式},time)`
+> 6. `eq()` 将匹配元素缩减指定index上的一个元素**从0开始** `$("li").eq(2).css()` **为第三个li添加css样式**
+> 7. `siblings()`选取某个元素的所有兄弟元素
