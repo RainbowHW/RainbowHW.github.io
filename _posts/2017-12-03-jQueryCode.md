@@ -80,3 +80,4 @@ jQuery中的`clientY` `pageY` `screenY` **都是获取鼠标位置的属性**
 > 5. `animate({css样式},time)`
 > 6. `eq()` 将匹配元素缩减指定index上的一个元素**从0开始** `$("li").eq(2).css()` **为第三个li添加css样式**
 > 7. `siblings()`选取某个元素的所有兄弟元素
+> 8. `if(!$(".contentList").is(":animated"))` 确保处于动画时不能再添加动画效果 `:animated`
