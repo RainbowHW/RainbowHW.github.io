@@ -2,7 +2,7 @@
 layout: post
 title: 锋利的jQuery代码案例
 description: jQuery Code
-tag: jQuery代码练习
+tag: jQuery
 ---
 
 ## 第二章 案例
@@ -133,16 +133,16 @@ $li.click(function(){
 
 >  (2).设置cookie
 >
-> `$.cookie("MyCssSkin",this.id,{path:'/',expires:10})；`将当前皮肤保存到cookie中(**也就是this.id值**)
+>  `$.cookie("MyCssSkin",this.id,{path:'/',expires:10})；`将当前皮肤保存到cookie中(**也就是this.id值**)
 >
-> 网页加载后获取cookie存入的皮肤值
+>  网页加载后获取cookie存入的皮肤值
 >
-> ```
-> var cookie_skin = $.cookie("MyCssSkin");
-> $("#"+cookie_skin).addClass("selected").siblings().removeClass("selected");
-> $("#cssfile").attr("href","css/"+cookie_skin+".css");
-> $.cookie("MyCssSkin",cookie_skin,{path:'/',expires:10});
-> ```
+>  ```
+>  var cookie_skin = $.cookie("MyCssSkin");
+>  $("#"+cookie_skin).addClass("selected").siblings().removeClass("selected");
+>  $("#cssfile").attr("href","css/"+cookie_skin+".css");
+>  $.cookie("MyCssSkin",cookie_skin,{path:'/',expires:10});
+>  ```
 
 4. `cookie`使用教程 [JavaScript设置Cookie](http://www.runoob.com/js/js-cookies.html)
 
