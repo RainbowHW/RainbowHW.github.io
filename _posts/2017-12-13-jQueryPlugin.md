@@ -19,24 +19,18 @@ tag: jQuery
 <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/localization/messages_tr.min.js"></script>
 ```
 
-#### 默认校验规则
-
-| 序号   | 规则                                       | 描述   |
-| ---- | ---------------------------------------- | ---- |
-| 1    | required:true/required:"#aa:checked"/required:function(){} | 必须字段 |
-| 2    | ..                                       | ..   |
-| 3    | ..                                       | ..   |
+#### [默认校验规则](http://www.runoob.com/jquery/jquery-plugin-validate.html)
 
 #### 使用方式
 
 ```html
 <form action="" method="POST" id="myform2">
-			<label>Username: <input type="text" name="username" value="" placeholder="enter your username"></label><br/>
-			<label>Age: <input type="text" name="age" value="" placeholder="enter your age"></label><br/>
-			<label>Birthday: <input type="text" name="birthday" value="" placeholder="enter your birthday"></label><br/>
-			<label>Password: <input type="password" name="password" id="password2" value="" placeholder="enter your password"></label><br/>
-			<label>Confirm Password: <input type="password" name="confirmPassword" value="" placeholder="confirm your password"></label><br/>
-			<input type="submit" name="submitBtn" value="Sign In">
+  <label>Username: <input type="text" name="username" value="" placeholder="enter your username"></label><br/>
+  <label>Age: <input type="text" name="age" value="" placeholder="enter your age"></label><br/>
+  <label>Birthday: <input type="text" name="birthday" value="" placeholder="enter your birthday"></label><br/>
+  <label>Password: <input type="password" name="password" id="password2" value="" placeholder="enter your password"></label><br/>
+  <label>Confirm Password: <input type="password" name="confirmPassword" value="" placeholder="confirm your password"></label><br/>
+  <input type="submit" name="submitBtn" value="Sign In">
 	</form>
 ```
 
