@@ -1,0 +1,59 @@
+---
+layout: post
+title: CSS3盒子模型
+description： CSS3的盒子模型及尺寸计算
+tag: CSS3
+---
+
+CSS盒子模型：
+
+1. 盒模型宽高设置：只能设置**块级元素和替换元素**宽高
+
+> 可以设置宽高的HTML元素
+>
+> * 块级元素
+> * **替换元素** 浏览器根据其标签的元素与**属性**来判断显示的具体内容 <img> <input> <textarea>等
+
+width:   max-width:(IE6不支持)   min-width:(IE6不支持)
+
+height: max-height (IE6不支持)    min-width (IE6不支持)  
+
+2. 盒子边框  
+
+   border-width:thin | medium | thick | 长度值
+
+   border-color:颜色 | transparent
+
+   border-style:none | dotted | solid | double | dashed
+
+3. 盒子内边距 padding  **padding值不能为负值**
+
+4. 盒子外边距 margin **margin值可以为负值**
+
+   HTML元素存在默认的margin值
+
+5. 盒子模型计算  `<!doctype html>` 如果没有这一行文档类型声明代码 ，各浏览器按照自己的方式解析，IE浏览器就会按照怪异模型解析，其它浏览器按照自己的方式解析盒子
+
+   标准盒模型：
+
+   > **width和height设置内容区域的宽高**   要计算元素占据页面的尺寸大小，则需要加上margin padding border
+   >
+   > 元素占据页面的宽高 = width/height + padding\*2 + margin \*2 + border\*2;
+
+   怪异盒子模型：(IE盒子模型)
+
+   > **width和height包括内容区的宽高+padding\*2+border\*2**
+   >
+   > 元素占据页面的宽高 = width/height  + margin\*2;
+
+CSS盒子模型的应用：
+
+1. 内联元素 或者通过display设置为inline的元素
+
+   **width和height属性无效 **
+
+   **水平方向**margin-left/margin-right/padding-left/padding-right**有效**
+
+   **垂直方向**margin-top/margin-bottom/padding-top/padding-bottom**有效**
+
+2. 块级元素 或者通过display设置为block的元素 width height 水平垂直方向的内外边距都有效
