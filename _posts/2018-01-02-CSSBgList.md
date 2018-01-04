@@ -43,10 +43,10 @@ CSS背景和列表
 
    inside：
 
-   ![inside](/images/CSS1.PNG)
+   ![inside](/images/article/CSS1.PNG)
 
    outside：
 
-   ![outside](/images/CSS2.PNG)
+   ![outside](/images/article/CSS2.PNG)
 
 4. list-style 复合属性 **多个属性值用空格分隔开，不分先后顺序**
