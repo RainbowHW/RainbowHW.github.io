@@ -1,44 +1,52 @@
-
-
+---
 layout: post
-title: CSS3字体样式
-description： CSS3的字体样式
+title: CSS3背景和列表
+description: CSS3背景和列表
 tag: CSS3
 ---
 
-设置网页字体样式：
+CSS背景和列表
 
-1. **文字**（单个文字） : 颜色、字体大小，字体，加粗等效果
-2. **文本** （大段的文字）: 行高、对齐方式、文本修饰
+#### 背景样式   背景样式包括内容、内边距padding和边框、不包括外边距margin
 
-#### 文字样式
+1. background-color  颜色 | transparent 
 
-font-family 含有空格字体名和中文，用引号括起来  font-family: "Times New Roman"；
+   transparent 是全透明黑色 RGBa（0，0，0，0）
 
-font-size 
+2. background-image 设置背景图片
 
-font-color
+   一般情况下，同时设定背景和背景图片，**背景位于背景图片的下方，被背景图片覆盖**，防止图片加载错误时产生背景空白
 
-font-weight
+3. background-position：长度值（x y）| 百分比(x% y%) | top | right | left | bottom | center  设置背景图像的起始位置
 
-font-style
+4. background-attachment : scroll(默认值) | fixed 设置背景图像是否固定或者随着页面其余部分滚动
 
-#### 文本样式 ：属性继承的时候，是将em转换为px来继承的（继承计算值）
+5. background-repeat 
 
-**text-align**设置**块级元素**的居中效果 (只对块级元素有效) `<div><img src="img/logo.png"/></div>`  设置行内元素对齐方式可以外层嵌套div
+6. background 复合属性 **多个属性值用空格分隔开，不分先后顺序**
 
-**vertical-align **只对**行内元素生效**，对**块级元素不生效** `<span>只对行内元素有效</span>`
+#### 列表样式
 
-```
-vertical-align:baseline | sub | super | top | text-top | middle | bottom | text-bottom | 长度（表示偏移距离） | 百分比
-```
+1. list-style-type: 关键字 | none 列表项标志的类型
 
-line-height  常用em来定义行高 `font-size:20px; line-height:1.3em` 行高为26px (同样也可以使用百分数来定义行高，是相对于字体大小计算的)
+   > 关键字：decimal（从1开始的整数） lower-roman 小写罗马数字 upper-roman 大写罗马数字   lower-alpha 小写英文字母 upper-alpha 大写英文字母
+   >
+   > 有序列表 ：
 
-word-spacing: 设置元素内**单词**之间的间距  (以空格开区分单词，当连续汉字的时候不会产生间距 当汉字之间存在空格的时候就会产生间距)
+2. list-style-image 将列表项目的标志设置为自定义图片
 
-letter-spacing: 设置元素内**字母**之间的间距 （连续汉字之间没有空格的时候，也会产生间距）
+3. list-style-position: inside | outside(默认值) 设置列表标志的位置
 
-text-transform: capitalize uppercase lowercase  none
+   > inside: 项目标记放在文本以内，是以标志对齐
+   >
+   > outside：项目标记放置在文本以外，是以文本对齐
 
-text-decoration 
+   inside：
+
+   ![CSS2](E:\a前端\github\younguei.github.io\images\article\CSS2.PNG)
+
+   outside：
+
+   ![outside](E:\a前端\github\younguei.github.io\images\article\CSS1.PNG)
+
+4. list-style 复合属性 **多个属性值用空格分隔开，不分先后顺序**
