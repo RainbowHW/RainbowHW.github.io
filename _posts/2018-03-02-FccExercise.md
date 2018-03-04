@@ -15,5 +15,7 @@ tag: FCC项目实战
 
    项目简化版本，[Weather-API](https://younguei.github.io/Weather-API/)全部使用了https请求，github中可以正常运行，唯一的不足时图片请求的时候仍然是http
 
+3. [Build-a-Wikipedia-Viewer](https://younguei.github.io/Build-a-Wikipedia-Viewer]/)
+
    ​
 
