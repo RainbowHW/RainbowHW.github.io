@@ -7,7 +7,7 @@ tag: FCC项目实战
 
 ### 目录
 
-1. [Random-Quote-Machine](https://younguei.github.io/Random-Quote-Machine/)
+1. [Random-Quote-Machine](https://younguei.github.io/Random-Quote-Machine/)  响应式页面[Random-Quote-Machine2](https://younguei.github.io/Random-Quote-Machine2)
 
 2. [Show-the-Local-Weather](https://younguei.github.io/Show-the-Local-Weather/)          
 
