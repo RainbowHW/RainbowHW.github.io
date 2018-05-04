@@ -5,7 +5,7 @@ description: JSpang系列教程
 tag: Vue
 ---
 
-#### 1.Vue-router入门
+### 1.Vue-router入门
 
 当我们写一个单页面应用的使用需要使用到路由。
 
@@ -31,7 +31,7 @@ tag: Vue
 
 > 当项目打包后，router的内容会展示到`router-view`标签内，router是全局注册的，所以点击`router-link`会切换`router-view`展示的内容，从而实现在一个`index.html`页面中切换内容
 
-#### 2.`vue-router`中配置子路由
+### 2.`vue-router`中配置子路由
 
 子路由：在一个页面下有多个页面，例如：主栏目下有两个子页面
 
@@ -61,7 +61,7 @@ tag: Vue
 
 在`Hi.vue`组件中添加`<router-view><router-view>`用于显示子路由内容
 
-#### 3.`vue-router`传递参数
+### 3.`vue-router`传递参数
 
 方法1路由配置中给给组件使用name属性，通过`$route.name`引用
 
@@ -77,7 +77,7 @@ tag: Vue
 
 `$route.params.key`
 
-#### 4.`vue-router`利用url传递参数  相对于方法3该方法url传递参数更常用
+### 4.`vue-router`利用url传递参数  相对于方法3该方法url传递参数更常用
 
 `{path:'/params/:newsId/:newsTitle'，component:Params}`
 
@@ -85,7 +85,7 @@ tag: Vue
 
 使用参数: `{{$route.params.newsId}}` `{{$route.params.newsTitle}}`
 
-#### 5.单页面多路由区域操作
+### 5.单页面多路由区域操作
 
 在一个页面内有多个`<router-view></router-view> `  相当于一个页面内有多个需要路由操作的模块
 
@@ -125,7 +125,7 @@ export default new Router({
 })
 ```
 
-#### 6.`vue-router`重定向`redirect`
+### 6.`vue-router`重定向`redirect`
 
 ```
 {
@@ -134,7 +134,7 @@ export default new Router({
 }
 ```
 
-#### 7.alias别名的使用 
+### 7.alias别名的使用 
 
 alias与redirect有相同的重定向效果，具体的还是有些区别
 
@@ -148,7 +148,7 @@ alias与redirect有相同的重定向效果，具体的还是有些区别
 
 vue不支持给path为`/`（根目录）起别名，不会跳转到根目录
 
-#### 8.路由的过渡动画 `<transition></transition>`
+### 8.路由的过渡动画 `<transition></transition>`
 
 fade-enter 进入过渡的开始状态 瞬间行为
 
@@ -174,7 +174,7 @@ fade-leave-active 离开过渡
 }
 ```
 
-#### 9.路由的mode模式
+### 9.路由的mode模式
 
 在路由配置文件添加mode选项`mode:history|hash(默认)`
 
@@ -191,7 +191,7 @@ export default new Router({
 })
 ```
 
-#### 10.路由的钩子函数
+### 10.路由的钩子函数
 
 方法1： 在路由文件中配置 (**只能在路由文件中写enter不能写leave**)
 
@@ -217,7 +217,7 @@ beforeRouteLeave: (to,from,next)=>{
 }
 ```
 
-#### 11.编程式导航
+### 11.编程式导航
 
 `this.$router.go(-1)`
 
