@@ -193,6 +193,8 @@ export default new Router({
 
 ### 10.路由的钩子函数
 
+**某个路由独享的钩子**： 定义在某个路径内部或某个组件内部
+
 方法1： 在路由文件中配置 (**只能在路由文件中写enter不能写leave**)
 
 > ```
@@ -215,6 +217,15 @@ beforeRouteLeave: (to,from,next)=>{
   console.log("离开");
   next();
 }
+```
+
+**全局钩子**： 对所有组件都有效果，定义在全局
+
+```
+const router = new VueRouter({.....})
+router.beforeEach((to,from,next)=>{
+  ....
+})
 ```
 
 ### 11.编程式导航
