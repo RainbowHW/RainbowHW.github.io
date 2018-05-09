@@ -19,9 +19,9 @@ tag: Vue
 
 #### 2. 基本布局 
 
-![1](/images/article/vueExercise1-1.png)
+![1](/images/article/vueExercise1-1.PNG)
 
-![成品图](/images/article/vueExercise1-2.png)
+![成品图](/images/article/vueExercise1-2.PNG)
 
 `lef-nav`用于构建导航栏，特意写了一个组件，用于导航。
 
