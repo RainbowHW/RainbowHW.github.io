@@ -6,7 +6,7 @@ description: 期待看到更宽广的世界
 avatarTitle: younguei
 # 头像里面的描述
 avatarDesc: Web前端
-url: "http://younguei.github.io"
+url: "http://rainbowhw.github.io"
 
 # Comment
 comment:
@@ -22,8 +22,8 @@ social:
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
-baidu:
-    id: 1913a96d4d48f5e695310e615c52274b  
+#baidu:
+    #id: 1913a96d4d48f5e695310e615c52274b  
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
